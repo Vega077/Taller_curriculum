@@ -50,10 +50,12 @@ function load_page() {
 }
 
 function send_info() {
+
     let name = document.getElementById("name").value;
     let Last_name = document.getElementById("last_name").value;
     let password = document.getElementById("password").value;
     let repeat = document.getElementById("repeat").value;
+
     if (name.length == 0 || Last_name.length == 0) {
         Swal.fire({
             title: "Campos vacios",
@@ -82,7 +84,97 @@ function send_info() {
         document.getElementById("repeat").style.border = "2px solid green"
         Swal.fire({
             icon: "success",
-            title: "Correcto 👌",
+            title: "Correcto",
         });
     }
+}
+
+//ARRAYS
+
+var dias_sem=["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+
+var array_num=[1,2,3,4,5,6,7,8,9];
+
+var array_mix=[1,2.5,"abc"];
+
+var array_mul=[
+    {name:"Wilder", age: 32, color: "green"},
+    {name:"Keyner", age: 18, color: "red"},
+    {name:"Uribe", age: 46, color: "black"},
+    {name:"Hitler", age: 34, color: "white"}
+];
+
+var json_ejm= {
+    name:"Keyner",
+    lastname:"Vega",
+    phone:"3204885863",
+    email:"kavegal@ufpso.edu.co"
+}
+
+console.log(dias_sem);
+console.log(array_num);
+console.log(array_mix);
+console.log(array_mul);
+console.log(json_ejm);
+
+for(let i=0;i<dias_sem.length;i++){
+
+    console.log(dias_sem[i]);
+}
+
+var j=0;
+while(j<array_num.length){
+    console.log(array_num[j]);
+    j++;
+}
+
+accu=0;
+for(let h=0; h<array_num.length;h++){
+    accu+=array_num[h];
+}
+console.log(accu);
+
+accum=0;
+for(let k=0; k<array_mul.length; k++){
+    accum = accum + array_mul[k].age;
+}
+// document.write("la suma de la edad es es: " + accum);// Esta no se usa crack
+document.getElementById("print_age").innerText = "El valor de la suma es:" + accum;
+
+var array_ejm = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+document.getElementById("valores").value = array_ejm;
+function aggfirst() {
+    let valor = document.getElementById("agnum").value;
+    array_ejm.unshift(valor);
+    document.getElementById("valores").value = array_ejm;
+    
+}
+function aggend() {
+    let valor = document.getElementById("agnum").value;
+    array_ejm.shift(valor);
+    document.getElementById("valores").value = array_ejm;
+    
+}
+
+function agregar() {
+    let valor = document.getElementById("agnum").value;
+    array_ejm.push(valor);
+    document.getElementById("valores").value = array_ejm;
+    
+}
+
+function eliminar() {
+    let valor = document.getElementById("agnum").value;
+    array_ejm.pop(valor);
+    document.getElementById("valores").value = array_ejm;
+}
+function reverse() {
+    document.getElementById("valores").value = array_ejm.reverse();
+}
+
+function limpiar() {   
+    document.getElementById("agnum").value = ""; 
+    document.getElementById("valores").value = ""
+    document.getElementById("print_age").innerHTML = " ";
+
 }

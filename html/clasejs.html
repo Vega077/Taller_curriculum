@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body onload="load_page()">
 
@@ -31,6 +32,23 @@
         <div id="print"></div>
     </div>
 
+    <br><br>
+
+    <div id="print_age"></div>
+    <br><br>
+
+    <input type="text"  id="agnum">
+    
+    <br><br>
+    <button onclick="aggfirst()">Agregar al principio</button>
+    <button onclick="aggend()">Eliminar al principio</button>
+    <button onclick="agregar()">Agregar al final</button>
+    <button onclick="eliminar()">Eliminar al final</button>
+    <br><br>
+    <input type="text" id="valores" disabled>
+    <br><br>
+    <button onclick="limpiar()">LIMPIAR</button>
+    <button onclick="reverse()">REVERSE</button>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/funtcions.js"></script>
@@ -43,5 +61,9 @@
 
     <!-- ARCHIVOS JS -->
     
+
+   
+
+
 </body>
 </html>
