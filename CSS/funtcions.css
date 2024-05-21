@@ -1,0 +1,30 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700; 1,900&display=intercambio');
+  
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* body{
+    font-family: 'Roboto', sans-serif;
+}
+div{
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+input{
+    background-color: rgb(255, 141, 141);
+    align-items: center;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+
+} */ 
+
+.alert{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+}
