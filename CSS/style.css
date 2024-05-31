@@ -61,8 +61,8 @@ nav{
 
 .nav .enlaces-header a:hover{
     color: #fff;
-    background-color: #000000;
-    border-color: #d03d3d;
+    background-color: #40006b;
+    border-color: #40006b;
     transition: all ease-in-out .6s;
 }
 .hamburguer{
@@ -90,7 +90,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    margin: o auto;
+    margin: 0 auto;
 }
 
 .contenido-header > img{
@@ -125,7 +125,7 @@ nav{
     margin: 28px 0 0 0 ;
     width: 150px;
     display: inline-block;
-    background-color: #d03d3d;
+    background-color: #40006b;
     text-align: center;
     color: #fff;
     padding: 12px 0;
@@ -134,7 +134,7 @@ nav{
     text-transform: uppercase;
     font-size: 16px;
     border-radius: 5px;
-    box-shadow: 0 8px 32px rgba(97 31 31 0.46);
+    box-shadow: 0 8px 32px #40006b;
 }
 
 /* ############# SECTION EDUCACIÓN ############# */
@@ -166,9 +166,9 @@ nav{
 }
 
 .articulo:hover{
-    box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
+    box-shadow: 0 4px 10px #40006b;
     color: #fff;
-    background-color: #d03d3d;
+    background-color: #40006b;
     transition: .5s;
 }
 
@@ -189,7 +189,7 @@ nav{
 }
 /* ################################## EXPERIENCIA ################################## */
 .experiencia {
-    background-color: #d03d3d;
+    background-color: #40006b;
     color: #fff;
 }
 
@@ -272,7 +272,7 @@ nav{
 .skills:hover {
     box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
     color: #fff;
-    background: #d03d3d;
+    background: #40006b;
     transition: .5s;
 }
 
@@ -309,7 +309,7 @@ nav{
 .certificate:hover {
     box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
     color: #fff;
-    background: #d03d3d;
+    background: #40006b;
     transition: .5s;    
 }
 
@@ -360,7 +360,7 @@ nav{
     }
     .enlaces-header{
         position: fixed;
-        background-color: #d03d3d;
+        background-color: #40006b;
         top: 0;
         right: 0;
         width: 100%;
@@ -372,7 +372,7 @@ nav{
     }
     .nav .enlaces-header a{
         color: #fff;
-        background-color: #cf5c6c;
+        background-color: #ab00fa;
         text-transform: uppercase;
         font-weight: 800;
         margin-top: 20px;
@@ -380,7 +380,7 @@ nav{
         text-align: center;
     }
     .nav .enlaces-header a:hover{
-        color: #d03d3d;
+        color: #40006b;
         background-color: #fff;
     }
     .hamburguer{
@@ -388,5 +388,371 @@ nav{
     }
     .nav .hamburgueropen{
         clip-path: circle(150% at 0 0);
+    }
+}
+
+/* ################################## INFO PERSONAL ################################## */
+.content-infopersonal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.space-infoperson {
+    width: 30%;
+    /* margin: auto; */
+    text-align: center;
+}
+
+.space-infoperson img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 10px solid #f2f2f2;
+}
+
+.space-infoperson p {
+    text-align: justify;
+    font-size: 300;
+    color: #565759;
+}
+
+.space-infoperson img:hover {
+    box-shadow: 0 5px 20px rgba(17, 29, 48, .26);
+    transition: .5s;
+}
+
+/* FOOTER */
+
+footer {
+    background: rgb(70, 70, 70);
+    padding: 20px 0;
+    padding-top: 30px;
+    overflow: hidden; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.partFooter {
+    width: 22%;
+    text-align: center;
+}
+
+.partFooter img {
+    width: 60%;
+}
+
+.partFooter h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    background-color: #40006b;
+    padding: 5px;
+    border: 1px solid #40006b;
+    border-radius: 5px;
+}
+
+.contact {
+    margin: 10px;
+    display: block;
+    text-align: left;
+}
+
+.contact > i {
+    float: left;
+    margin: 0 0 0 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    line-height: 28px;
+    text-align: center;
+    align-items: center;
+}
+
+.contact > p {
+    margin-left: 50px;
+    align-items: center;
+    line-height: 28px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.partFooter > a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.partFooter > a:hover {
+    color: #fff;
+    background-color: #ab00fa;
+    border-color: #ab00fa;
+    transition: all ease-in-out .6s;
+    border-radius: 5px;
+}
+
+.social-media > a > i {
+    font-size: 20px;
+    display: inline-block; 
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%; 
+    width: 38px; 
+    height: 38px; 
+    line-height: 36px; 
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+}
+
+.social-media > a > i:hover {
+    color: #fff;
+    background-color: #40006b;
+    border-color: #40006b;
+}
+
+
+@media screen and (min-width:1000px) and (max-width:1200px) {
+
+    .space-infoperson img {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+@media screen and (max-width:1000px) {
+   
+    h1 {
+        font-size: 35px;
+    }
+
+    .contenido-header {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 700px;
+    }
+
+    .contenido-header>img {
+        width: 150px; 
+        height: 150px;
+        animation: ease-in animacion 0.5s; 
+    } 
+
+    .nav .enlaces-header a {
+        margin: 0;
+    }
+
+    .textos-header h1 {
+        font-size: 40px;
+    }
+
+    .textos-header {
+        margin: 0;
+    }
+
+    .contenido-header>img {
+        margin: 0;
+    }
+
+    .articulo {
+        width: 45%;
+    }
+
+    .space-infoperson p {
+        margin-bottom: 20px;
+    }
+
+    .content-infopersonal {
+        margin: 20px 0;
+    }
+
+    .space-infoperson {
+        width: 95%;
+    }
+
+    .element-one {
+        order: 2;
+    }
+
+    .element-two {
+        order: 1;
+    }
+
+    .element-three {
+        order: 3;
+    }
+
+    .certificate {
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+
+    .articulo, .experience, .certificate {
+        width: 45%;
+    }
+
+    .skills {
+        width: 32%;
+    }
+
+    .content-infopersonal {
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 20px;;
+    }
+
+    .space-infoperson {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .element-one {
+        order: 2;
+    }
+
+    .element-two {
+        order: 1;
+    }
+
+    .element-three {
+        order: 3;
+    }
+
+    .partFooter {
+        width: 45%;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    h1 {
+        font-size: 25px;
+    }
+
+    .contenido-header {
+        width: 100%;
+        height: 560px;
+    }
+
+    .contenido-header>img {
+        width: 120px; 
+        height: 120px;
+        animation: ease-in animacion 0.5s; 
+        margin: 20px 0;
+    }  
+    
+    .articulo, .experience, .certificate, .skills {
+        width: 90%;
+    }
+
+    .skills {
+        margin-bottom: 20px;
+    }
+
+    .articulo, .experience, .content-skills {
+        margin-top: 20px;
+    }
+
+    .content-skills {
+        margin-bottom: 20px;
+    }
+
+    .content-certificados {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .certificate {
+        margin: 10px;
+        padding: 10px;        
+    }
+
+    .content-infopersonal {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .space-infoperson {
+        width: 95%;
+    }
+
+    .element-one {
+        order: 2;
+    }
+
+    .element-two {
+        order: 1;
+    }
+
+    .element-three {
+        order: 3;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .partFooter img {
+        display: none;
+    }
+
+    .partFooter {
+        width: 95%;
+        margin: auto;
+    }
+
+    .partFooter h4 {
+        margin-bottom: 5px;
+    }
+
+    .enlaces-header {
+        position: fixed;
+        background-color: #40006b;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh; /100 view*head/
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        clip-path: circle(0.0% at 0 0);
+    }
+
+    .nav .hamburgueropen {
+        clip-path: circle(150% at 0 0);
+    }
+
+    .nav .enlaces-header a {
+        color: #fff;
+        background-color: #ab00fa;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-top: 20px;
+        width: 50%;
+        text-align: center;
+    }
+
+    .nav .enlaces-header a:hover {
+        color: #40006b;
+        background-color: #fff;
+    }
+
+    .hamburguer {
+        display: block;
     }
 }
