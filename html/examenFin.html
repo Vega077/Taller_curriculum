@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+    <!-- ESTILOS CSS -->
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container{
+            height: 600px;
+            width: 400px;
+            border-radius: 20px;
+            border: 2px solid gray;
+            box-shadow: 0 0 10px gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <input type="text" id="caja_uno">
+            <input type="text" id="caja_dos">
+        </div>
+        <h3>ZONA DE IMPRESION</h3>
+        <div id="print_name"></div>
+        <div id = "cant"></div>
+        <div id="print"></div>
+        <button onclick="enviar()">ENVIAR</button>
+    </div>
+
+    <!-- ESTILOS JS -->
+    <script>
+        function enviar(){
+            let caja_uno = document.getElementById("caja_uno").value.trim();
+            let caja_dos = document.getElementById("caja_dos").value.trim();
+            let concat = caja_dos+ caja_uno;
+
+            let letter= "";
+            
+
+            // document.getElementById("print_name").innerText = caja_uno.toUpperCase() + " " + caja_dos.toUpperCase();
+            // document.getElementById("cant").innerText = "Tiene " + concat.length + " caracteres";
+            
+
+            // TABLAS DE MULTIPLICAR
+            let cadena="";
+            for (let i = 1; i <= concat.length; i++) {
+                cadena += concat.length + " x " +i+ "=" + (concat.length*i) + "\n";
+            }
+
+            document.getElementById("cant").innerText = cadena; 
+
+
+            
+            ////////////////////////////// PARA IMPARES EN EL IF SE PONE == 1 ////////////////////////////////////////////
+            ////////////////////////////// SOLO NUMEROS //////////////////////////////////
+
+
+        //     let pares = "";
+        //     for(f = caja_uno ; f<= caja_dos ; f++){
+        //         if(f%2 == 0){
+        //             pares += f + "\n";
+        //         }
+        //     }  
+        //     document.getElementById("cant").innerText= pares;
+        }
+
+        ////////////////////controles basicos de git/////////////////////////////////
+
+        //git init 
+        //git checkout -b
+        //git remote add origin (link .git)
+        //git remote -v (para confirmar)
+        //git push -u origin ...(nombre de la rama)
+        //git add 
+        //git commit -m '' (nombre especifico para subir a git)
+
+    </script>
+</body>
+</html>

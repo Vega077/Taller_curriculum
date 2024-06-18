@@ -95,6 +95,13 @@ function send_info() {
         document.getElementById("name").style.border = "2px solid red"
     } else if (Last_name.length == 0) {
         document.getElementById("last_name").style.border = "2px solid red"
+    }else if (password.length == 0){
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Contraseña no ingresada",
+            footer: 'Ingrese una contraseña valida'
+        })
     }else if (repeat != password) {
         Swal.fire({
             icon: "error",
@@ -102,7 +109,7 @@ function send_info() {
             text: "Contraseña Incorrecta",
             footer: 'Vuelva a ingresar su contraseña'
         });
-    }else {
+        }else {
         document.getElementById("print").innerText = name + " " + Last_name;
         document.getElementById("name").style.border = "2px solid green"
         document.getElementById("last_name").style.border = "2px solid green"
